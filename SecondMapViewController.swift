@@ -5,13 +5,10 @@ class SecondMapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
 
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let urlTeplate = "https://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg"
+        let urlTeplate = "https://cyberjapandata.gsi.go.jp/xyz/ort_old10/{z}/{x}/{y}.png"
         let overlay = MKTileOverlay(urlTemplate: urlTeplate)
         overlay.canReplaceMapContent = true
         
@@ -42,8 +39,3 @@ class SecondMapViewController: UIViewController, MKMapViewDelegate {
     }
 }
 
-//extension SecondMapViewController: MKMapViewDelegate {
-//    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-//        return MKTileOverlayRenderer(overlay: overlay)
-//    }
-//}

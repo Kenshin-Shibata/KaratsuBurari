@@ -1,29 +1,41 @@
-//
-//  ThirdMapViewController.swift
-//  KaratsuBurari
-//
-//  Created by 柴田謙真 on 2021/04/26.
-//
-
 import UIKit
+import MapKit
 
-class ThirdMapViewController: UIViewController {
+class ThirdMapViewController: UIViewController, MKMapViewDelegate {
+
+    @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let urlTeplate = "https://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg"
+        let overlay = MKTileOverlay(urlTemplate: urlTeplate)
+        overlay.canReplaceMapContent = true
+        
+        mapView.delegate = self
+        mapView.addOverlay(overlay, level: .aboveLabels)
+        
+        let location:CLLocationCoordinate2D
+            = CLLocationCoordinate2DMake(33.4535094,129.9781606)
+ 
+        mapView.setCenter(location,animated:true)
+        
+        var region:MKCoordinateRegion = mapView.region
+        region.center = location
+        region.span.latitudeDelta = 0.02
+        region.span.longitudeDelta = 0.02
+ 
+        mapView.setRegion(region,animated:true)
+ 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if overlay is MKTileOverlay {
+            let renderer = MKTileOverlayRenderer(overlay: overlay)
+            return renderer
+        } else {
+            return MKTileOverlayRenderer()
+        }
     }
-    */
-
 }
+
