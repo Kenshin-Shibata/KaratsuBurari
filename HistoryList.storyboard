@@ -16,34 +16,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pZ1-dM-Me1">
+                            <view contentMode="scaleToFill" id="ub2-EZ-TJ4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZjB-lh-uqG">
+                                        <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryContentsTableViewCell" rowHeight="150" id="bw7-gv-glg" customClass="HistoryContentsTableViewCell" customModule="KaratsuBurari" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bw7-gv-glg" id="JB4-7J-zgc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="唐津城" translatesAutoresizingMaskIntoConstraints="NO" id="KKn-76-SpY">
+                                                            <rect key="frame" x="200" y="7" width="207" height="136"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="80" id="kgH-9d-cRK"/>
+                                                                <constraint firstAttribute="width" constant="150" id="pMV-L9-nK2"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="唐津城" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJG-eW-6ag">
+                                                            <rect key="frame" x="41" y="18" width="60" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="JBT-9d-09W"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="20"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="KKn-76-SpY" firstAttribute="bottom" secondItem="JB4-7J-zgc" secondAttribute="bottomMargin" constant="5" id="0Ri-JA-DTz"/>
+                                                        <constraint firstItem="EJG-eW-6ag" firstAttribute="leading" secondItem="JB4-7J-zgc" secondAttribute="leading" constant="30" id="1J0-FV-5xk"/>
+                                                        <constraint firstItem="KKn-76-SpY" firstAttribute="centerY" secondItem="JB4-7J-zgc" secondAttribute="centerY" id="EeI-XZ-y2e"/>
+                                                        <constraint firstItem="KKn-76-SpY" firstAttribute="trailing" secondItem="JB4-7J-zgc" secondAttribute="trailingMargin" constant="15" id="F2T-cN-i6U"/>
+                                                        <constraint firstItem="KKn-76-SpY" firstAttribute="top" secondItem="JB4-7J-zgc" secondAttribute="topMargin" constant="5" id="ZF9-PO-W9E"/>
+                                                        <constraint firstItem="KKn-76-SpY" firstAttribute="top" secondItem="JB4-7J-zgc" secondAttribute="top" constant="5" id="eTV-si-XXR"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KKn-76-SpY" secondAttribute="bottom" constant="5" id="uMc-Y4-ugh"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="historyContentImage" destination="KKn-76-SpY" id="Qc8-lF-4Pc"/>
+                                                    <outlet property="historyContentNameJPLabel" destination="EJG-eW-6ag" id="vpZ-Vq-bYT"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Ta1-NV-b0d" id="pdr-eD-L0w"/>
+                                            <outlet property="delegate" destination="Ta1-NV-b0d" id="0T9-G6-aeE"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="4s2-J4-4Q5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pZ1-dM-Me1">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" textLabel="7J2-HC-fh6" detailTextLabel="qDr-vr-Nj8" rowHeight="164" style="IBUITableViewCellStyleSubtitle" id="SDN-hP-llC">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="164"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryContentsTableViewCell" rowHeight="150" id="SDN-hP-llC" customClass="HistoryContentsTableViewCell" customModule="KaratsuBurari" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SDN-hP-llC" id="jdi-31-EiP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7J2-HC-fh6">
-                                                    <rect key="frame" x="20" y="62" width="33" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qDr-vr-Nj8">
-                                                    <rect key="frame" x="20" y="85.5" width="33" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="唐津城" translatesAutoresizingMaskIntoConstraints="NO" id="kZn-W0-Ox2">
+                                                    <rect key="frame" x="200" y="7" width="207" height="136"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="GTz-0V-ArM"/>
+                                                        <constraint firstAttribute="width" constant="150" id="whB-3F-EEX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="唐津城" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="535-JM-XVu">
+                                                    <rect key="frame" x="41" y="18" width="60" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="wyJ-FE-eZ4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kZn-W0-Ox2" firstAttribute="centerY" secondItem="jdi-31-EiP" secondAttribute="centerY" id="5bf-SP-Vwc"/>
+                                                <constraint firstItem="kZn-W0-Ox2" firstAttribute="trailing" secondItem="jdi-31-EiP" secondAttribute="trailingMargin" constant="15" id="9pE-YU-wR6"/>
+                                                <constraint firstAttribute="bottom" secondItem="kZn-W0-Ox2" secondAttribute="bottom" constant="5" id="T2c-5w-2j0"/>
+                                                <constraint firstItem="kZn-W0-Ox2" firstAttribute="top" secondItem="jdi-31-EiP" secondAttribute="top" constant="5" id="fEs-Pm-Ahl"/>
+                                                <constraint firstItem="kZn-W0-Ox2" firstAttribute="top" secondItem="jdi-31-EiP" secondAttribute="topMargin" constant="5" id="pvc-B7-bf6"/>
+                                                <constraint firstItem="kZn-W0-Ox2" firstAttribute="bottom" secondItem="jdi-31-EiP" secondAttribute="bottomMargin" constant="5" id="spR-UF-F7L"/>
+                                                <constraint firstItem="535-JM-XVu" firstAttribute="leading" secondItem="jdi-31-EiP" secondAttribute="leading" constant="30" id="wdN-FI-Sd7"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="historyContentImage" destination="kZn-W0-Ox2" id="CMg-6o-ewT"/>
+                                            <outlet property="historyContentNameJPLabel" destination="535-JM-XVu" id="p0C-lY-svo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -85,8 +158,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="唐津城" width="400" height="266"/>
         <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

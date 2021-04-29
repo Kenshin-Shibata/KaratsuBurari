@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct HistoryContents {
+struct HistoryContent {
     private(set) public var nameJP : String
-    private(set) public var textJP : String
+    // private(set) public var textJP : String
     private(set) public var imageName : String
     
-    init(nameJP: String, textJP: String, imageName: String) {
+    init(nameJP: String, imageName: String) {
         self.nameJP = nameJP
-        self.textJP = textJP
+        //self.textJP = textJP
         self.imageName = imageName
     }
 }
