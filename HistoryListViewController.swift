@@ -20,9 +20,9 @@ class HistoryListViewController: UIViewController, UITableViewDataSource, UITabl
         historyContents.append(HistoryContent(nameJP:"名護屋城跡", imageName:"名護屋城"))
         historyContents.append(HistoryContent(nameJP:"岸岳城跡", imageName:"岸岳城"))
         historyContents.append(HistoryContent(nameJP:"唐津くんち", imageName:"唐津くんち"))
-        historyContents.append(HistoryContent(nameJP:"虹の松原", imageName:"岸岳城"))
-        historyContents.append(HistoryContent(nameJP:"鏡山", imageName:"岸岳城"))
-        historyContents.append(HistoryContent(nameJP:"鵜殿石仏郡", imageName:"岸岳城"))
+        historyContents.append(HistoryContent(nameJP:"虹の松原", imageName:"虹の松原"))
+        historyContents.append(HistoryContent(nameJP:"鏡山", imageName:"鏡山"))
+        historyContents.append(HistoryContent(nameJP:"鵜殿石仏郡", imageName:"鵜殿石仏郡"))
         historyContents.append(HistoryContent(nameJP:"旧唐津銀行", imageName:"旧唐津銀行"))
     }
     //Table Viewnのセルの数を指定
