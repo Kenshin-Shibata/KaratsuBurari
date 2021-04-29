@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map List View Controller-->
+        <!--Map List-->
         <scene sceneID="UZj-tt-GIJ">
             <objects>
                 <viewController storyboardIdentifier="MapListViewController" id="bAD-i3-Q9z" customClass="MapListViewController" customModule="KaratsuBurari" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +54,7 @@
                         <viewLayoutGuide key="safeArea" id="BvE-LK-CTu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7gx-42-oj7"/>
+                    <navigationItem key="navigationItem" title="Map List" id="7gx-42-oj7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAk-oS-CbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
