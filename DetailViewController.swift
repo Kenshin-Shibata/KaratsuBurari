@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
 
         historyContentImage.image = UIImage(named: historyContent.imageName)
         historyContentJPLabel.text = historyContent.nameJP
+        historyContentText.text = historyContent.textJP
     }
     
 

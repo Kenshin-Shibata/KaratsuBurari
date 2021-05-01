@@ -16,15 +16,15 @@ class HistoryListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func loadData() {
-        historyContents.append(HistoryContent(nameJP:"唐津城", imageName:"唐津城"))
-        historyContents.append(HistoryContent(nameJP:"肥前名護屋城跡", imageName:"名護屋城"))
-        historyContents.append(HistoryContent(nameJP:"岸岳城跡", imageName:"岸岳城"))
-        historyContents.append(HistoryContent(nameJP:"唐津くんち", imageName:"唐津くんち"))
-        historyContents.append(HistoryContent(nameJP:"虹の松原", imageName:"虹の松原"))
-        historyContents.append(HistoryContent(nameJP:"鏡山", imageName:"鏡山"))
-        historyContents.append(HistoryContent(nameJP:"鵜殿石仏郡", imageName:"鵜殿石仏郡"))
-        historyContents.append(HistoryContent(nameJP:"旧唐津銀行", imageName:"旧唐津銀行"))
-        historyContents.append(HistoryContent(nameJP:"呼子の捕鯨", imageName:"呼子の捕鯨"))
+        historyContents.append(HistoryContent(nameJP:"唐津城", textJP: "Hellooooo", imageName:"唐津城"))
+        historyContents.append(HistoryContent(nameJP:"肥前名護屋城跡", textJP: "Heyyyyy", imageName:"名護屋城"))
+        historyContents.append(HistoryContent(nameJP:"岸岳城跡", textJP: "Goood", imageName:"岸岳城"))
+        historyContents.append(HistoryContent(nameJP:"唐津くんち", textJP: "hoooooo", imageName:"唐津くんち"))
+        historyContents.append(HistoryContent(nameJP:"虹の松原", textJP: "foooooo", imageName:"虹の松原"))
+        historyContents.append(HistoryContent(nameJP:"鏡山", textJP: "yahooo", imageName:"鏡山"))
+        historyContents.append(HistoryContent(nameJP:"鵜殿石仏郡",textJP: "udono", imageName:"鵜殿石仏郡"))
+        historyContents.append(HistoryContent(nameJP:"旧唐津銀行", textJP: "karatsu bank", imageName:"旧唐津銀行"))
+        historyContents.append(HistoryContent(nameJP:"呼子の捕鯨", textJP: "yobuko", imageName:"呼子の捕鯨"))
     }
     //Table Viewnのセルの数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
