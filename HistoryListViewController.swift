@@ -44,4 +44,22 @@ class HistoryListViewController: UIViewController, UITableViewDataSource, UITabl
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailSegue" {
+            if let indexPath = table.indexPathForSelectedRow {
+                guard let destination = segue.destination as? DetailViewController else {
+                    fatalError("Failed to prepare DetailViewController")
+                }
+                
+                destination.historyContent = historyContents[indexPath.row]
+            }
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let indexPath = table.indexPathForSelectedRow {
+            table.deselectRow(at: indexPath, animated: true)
+        }
+    }
+    
 }
