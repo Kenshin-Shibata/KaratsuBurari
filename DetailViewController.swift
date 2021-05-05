@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var historyContentScroll: UIScrollView!
     @IBOutlet weak var historyContentText: UITextView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

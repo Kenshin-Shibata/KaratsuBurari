@@ -78,6 +78,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryContentsTableViewCell" rowHeight="150" id="SDN-hP-llC" customClass="HistoryContentsTableViewCell" customModule="KaratsuBurari" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="150"/>
@@ -114,6 +115,7 @@
                                                 <constraint firstItem="535-JM-XVu" firstAttribute="leading" secondItem="jdi-31-EiP" secondAttribute="leading" constant="30" id="wdN-FI-Sd7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="historyContentImage" destination="kZn-W0-Ox2" id="CMg-6o-ewT"/>
                                             <outlet property="historyContentNameJPLabel" destination="535-JM-XVu" id="p0C-lY-svo"/>
@@ -130,7 +132,7 @@
                         <viewLayoutGuide key="safeArea" id="WdO-cL-3EZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="History List" id="Qvy-km-Mlg"/>
+                    <navigationItem key="navigationItem" title="歴史からぶらり" id="Qvy-km-Mlg"/>
                     <connections>
                         <outlet property="table" destination="pZ1-dM-Me1" id="NDQ-K8-gPe"/>
                     </connections>
@@ -159,10 +161,10 @@
                                 <rect key="frame" x="57" y="445" width="300" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w21-TE-F3b">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w21-TE-F3b">
                                         <rect key="frame" x="8" y="19" width="284" height="323"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">唐津城は、豊臣秀吉の家臣“寺沢志摩守広高”が慶長7年(1602年)から７ヶ年の歳月を費やして完成したと伝えられています。
 現在の天守閣は昭和41年に完成したものです。
 別名「舞鶴城」ともいわれ、桜・藤の名所でもあります。
@@ -172,6 +174,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="zHH-nb-Pw0"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="zeb-2H-Ej0"/>
                             </scrollView>
@@ -187,7 +190,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7du-fF-JdO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YSn-9D-iMu" firstAttribute="centerX" secondItem="zEu-uU-Mlh" secondAttribute="centerX" id="BtC-dY-aWE"/>
                             <constraint firstItem="YSn-9D-iMu" firstAttribute="centerX" secondItem="zEu-uU-Mlh" secondAttribute="centerX" id="Qw9-te-fR0"/>
