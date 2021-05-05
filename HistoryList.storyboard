@@ -132,7 +132,7 @@
                         <viewLayoutGuide key="safeArea" id="WdO-cL-3EZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="歴史からぶらり" id="Qvy-km-Mlg"/>
+                    <navigationItem key="navigationItem" title="History List" id="Qvy-km-Mlg"/>
                     <connections>
                         <outlet property="table" destination="pZ1-dM-Me1" id="NDQ-K8-gPe"/>
                     </connections>
@@ -161,7 +161,7 @@
                                 <rect key="frame" x="57" y="445" width="300" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w21-TE-F3b">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w21-TE-F3b">
                                         <rect key="frame" x="8" y="19" width="284" height="323"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
