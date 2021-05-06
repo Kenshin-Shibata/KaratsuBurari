@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-4S-113">
-                                <rect key="frame" x="246" y="209" width="138" height="38"/>
+                                <rect key="frame" x="240" y="209" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
                                 <state key="normal" title="地図でぶらり"/>
                                 <connections>
                                     <segue destination="PAS-Fa-az1" kind="show" id="zBW-mb-mLh"/>
@@ -29,7 +29,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-7d-bBf">
                                 <rect key="frame" x="234" y="317" width="138" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
                                 <state key="normal" title="歴史でぶらり"/>
                                 <connections>
                                     <segue destination="KZU-4r-miv" kind="show" id="IsL-Ni-nvL"/>
@@ -76,10 +76,10 @@
         <!--Navigation Controller-->
         <scene sceneID="Ewp-j7-iUS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WJP-DF-r0R" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e1F-HE-Hqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WJP-DF-r0R" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2np-gy-kDI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" systemColor="systemYellowColor"/>
                         <textAttributes key="titleTextAttributes">
@@ -91,7 +91,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PEr-MB-zbr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e1F-HE-Hqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>

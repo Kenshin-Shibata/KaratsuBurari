@@ -19,28 +19,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //"地図からぶらり"ボタンの装飾¥
-        MapButton.frame = CGRect(x: 200, y: 350, width: 180, height: 50)
+        MapButton.frame = CGRect(x: 200, y: 350, width: 200, height: 65)
         MapButton.backgroundColor = cornSink
         MapButton.setTitleColor(saddleBrown, for: UIControl.State.normal)
-        
         MapButton.layer.borderWidth = 2  // 5
         MapButton.layer.borderColor = UIColor.gray.cgColor  // 6
- 
-        MapButton.layer.cornerRadius = 20  // 7
+        MapButton.layer.cornerRadius = 23  // 7
         
         //MapButton.layer.shadowOffset = CGSize(width: 3, height: 3 )  // 8
         //MapButton.layer.shadowOpacity = 0.5  // 9
         //MapButton.layer.shadowRadius = 10  // 10
         //MapButton.layer.shadowColor = UIColor.gray.cgColor  // 11
         
-        HistoryButton.frame = CGRect(x: 200, y: 450, width: 180, height: 50)
+        HistoryButton.frame = CGRect(x: 200, y: 450, width: 200, height: 65)
         HistoryButton.backgroundColor = cornSink
         HistoryButton.setTitleColor(darkGreen, for: UIControl.State.normal)
-        
         HistoryButton.layer.borderWidth = 2  // 5
         HistoryButton.layer.borderColor = UIColor.gray.cgColor  // 6
- 
-        HistoryButton.layer.cornerRadius = 20  // 7
+        HistoryButton.layer.cornerRadius = 23  // 7
         
         //"歴史からぶらり"ボタンの装飾
         
